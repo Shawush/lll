@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="Contact.js"></script>
+  <title>Contact Me</title><!--Title of page-->
+  <link rel="icon" type="image/png" href="images/Favicon.png"><!--FavIcon libya-->
+</head>
+
+<body>
+  <header id="contact-me-header">
+    <h1>Contact Me</h1>
+  </header>
+  <nav><!-- Navigator that lets you move around from page to page -->
+    <a href="index.html"><b>Home page</b></a>
+    <a href="Skills-And-Projects.html"><b>Skills And Projects</b></a>
+    <!-- add three buttons to the changes the collor pallet of the page -->
+    <button class="color-btn" id="pallate_1" onclick="changeColor()">pallate 1</button>
+    <button class="color-btn" id="pallate_2" onclick="changeColor2()">pallate 2</button>
+    <button class="color-btn" id="pallate_3" onclick="changeColor3()">pallate 3</button>
+  </nav>
+  <!-- Contact me section that has images of my social media platforms-->
+  <main id="contact-me">
+    <div id="media_table">
+      <p>You can find me on the following platforms:</p>
+      <table class="media_table">
+        <tr>
+          <td><a href="https://www.linkedin.com/in/omar-shawush-67a534265">
+              <img src="images/linkedin-icon.png" alt="LinkedIn" height="75" width="75">LinkedIn</a></td>
+          <td><a href="mailto:shawush12@gmail.com">
+              <img src="images/email-icon.png" alt="Email" height="75" width="75">Email</a></td>
+          <td><a href="https://www.instagram.com/oshawush">
+              <img src="images/instagram-icon.png" alt="Instagram" height="75" width="75">Instagram</a></td>
+          <td><a href="https://twitter.com/OShawush">
+              <img src="images/twitter-icon.png" alt="Twitter" height="75" width="75">Twitter</a></td>
+        </tr>
+      </table>
+    </div>
+    <!-- Contact Form with a name,lastname,number,email,and message section -->
+    <div id="contact-form">
+      <h2 id="contact-form-h">For specific inquiries, please fill in this form.</h2>
+      <p>I will see to getting back to you as soon as possible.</p>
+      <form class="contact-form" action="#" method="post" onsubmit="return validateForm()">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- creating a text area -->
+        <label for="Inquiries">Leave a message:</label>
+        <input type="textarea" id="" name="email" required>
+
+        <p></p>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"><!-- Link to stylesheet -->
+  <script src="Skills.js"></script> <!-- Link to Javascript -->
+  <title>My Projects and Skills</title> <!-- Title of the page -->
+  <link rel="icon" type="image/png" href="images/Favicon.png"> <!-- Favicon -->
+</head>
+
+<body class="main-pages"> <!-- Body of the page with a class "main-pages" -->
+  <header> <!-- Header section of the page -->
+    <h1>Projects and Skills</h1> <!-- Main heading of the page -->
+    <nav> <!-- Navigation links of the page -->
+      <a href="index.html"><b>Home page</b></a>
+      <a href="Contact-Me.html"><b>Contact Me</b></a>
+      <button class="color-btn" id="pallate_1" onclick="changeColor()">pallate 1</button>
+      <button class="color-btn" id="pallate_2" onclick="changeColor2()">pallate 2</button>
+      <button class="color-btn" id="pallate_3" onclick="changeColor3()">pallate 3</button>
+    </nav>
+  </header>
+  <main> <!-- Main content of the page -->
+    <div id="skills"> <!-- Section for my skills -->
+      <h2 class="text-dark">Video Editing</h2> <!-- Section for video editing -->
+      <!-- Paragraph about my skills as an editor -->
+      <p id="paragraph">As a skilled video editor, my attention to detail and technological
+        experience is vast. Video editing is a way of bringing an idea to life
+        and technology needs people who can fulfill this task. Using CapCut meant
+        sacrificing quality for functionality because of how limited I was while
+        using the program. As my skills grew and I got better at editing, I decided
+        to switch to Adobe's Premiere Pro, a more advanced editing program with
+        more functionality. The switch came with more than just the functionality,
+        the program looked better visually, was easy to navigate, and worked
+        smoothly with little to no crashes. This is similar to software
+        development where you find better ways to do things that help explore
+        your creativity and innovate in the field.</p>
+    </div>
+
+    <div id="projects"> <!-- Section for my projects -->
+      <section>
+        <h2>Some Of My Work</h2> <!-- Heading for the section of some of my work -->
+      </section>
+
+      <div id="video"> <!-- Section for the video -->
+        <video width="520" height="340" autoplay muted> <!-- Video for my editing work -->
+          <source src="video/edit.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <section id="projects_"> <!-- Section for the projects -->
+        <h2>Projects</h2> <!-- Section for the projects -->
+        <table> <!-- table holding projects-->
+          <tr>
+            <td>
+              <b>Digital BoardsGames</b>
+              <ol>
+                <li>BATTLESHIP</li>
+                <li>TIC-TAC-TOE</li>
+              </ol>
+            </td>
+            <td>
+              <b>Data Storage and Sorting</b> <!-- Bolded main points of the second column -->
+              <ol>
+                <li>Automated patient file storer</li>
+                <li>Salary calculator</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <section id="horizontal-images" class="horizontal-images"> <!-- Section for the coding languages -->
+      <h2>Proficient Coding Languages</h2> <!-- Heading for the coding languages -->
+      <div id="Flex">
+        <div id="row1"> <!-- First row of coding languages -->
+          <div>
+            <img src="images/javascript.png" alt="JavaScript logo" width="150" height="150">
+          </div>
+
+          <div>
+            <img src="images/python.png" alt="Python logo" width="150" height="150">
+          </div>
+
+          <div>
+            <img src="images/java.png" alt="Java logo" width="150" height="150">
+          </div>
+        </div>
+
+        <!-- This div contains the logos of C++ and C -->
+        <div id="row2">
+          <div>
+            <img src="images/c++.png" alt="C++ logo" width="150" height="150">
+          </div>
+
+          <div>
+            <img src="images/c.png" alt="C logo" width="150" height="150">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>

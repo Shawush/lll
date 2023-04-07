@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* Universal selector, mainly changing box setup, font and font size  */
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --dark : #222831;
+  --dark2: #393E46;
+  --light: #00ADB5;
+  --light2: #EEEEEE;
+}
+
+h1{
+  font-size: 16px;
+  padding: 10px;
+  color: var(--light);
+  text-align: center;
+}
+
+/* Changing background color, text color, and aligning text with minor addition to padding */
+nav {
+  background-color: var(--dark);
+  color: var(--light2);
+  text-align: center;
+  padding: 10px;
+}
+
+/* Changing link text color, text decoration and margin */
+nav a {
+  color: var(--light2);
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* Button styling */
+.color-btn {
+  padding: 5px 10px;
+  background-color: var(--light);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  color: var(--light2);
+}
+/*hover color*/
+.color-btn:hover {
+  background-color: var(--light2);
+  color: var(--dark);
+}
+
+/* Added a border, padding, and margin to all images */
+img {
+  padding: 5px;
+  margin: 10px;
+  background-color: var(--dark2);
+}
+
+/* Changing link text color to blue */
+td > a {
+  color: var(--light);
+  padding: 5px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--light2);
+}
+
+/* contact us page */
+
+#media_table {
+  padding: 2% 0;
+  width: 100%;
+}
+
+#media_table p{
+  text-align: center;
+  padding: 5px;
+}
+
+/* table media_table */
+.media_table {
+  border-collapse: collapse;
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* Set border and alignment for table cells (border,padding) */
+.media_table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Set styles for table rows (background color and text color) */
+.media_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Set styles for table rows (background color and text color) */
+.media_table tr:hover {
+  background-color: #ddd;
+}
+
+/* Set styles for table headings (padding,background color and text color) */
+.media_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--dark);
+  color: var(--light2);
+}
+
+/* Set border and alignment for image with specific alt text(border,block,centering vertically and horizontally) */
+img[alt="Picture of me"] {
+  border: 4px dotted black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for edited video(flexbox container,centering) */
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set styles for video within the container(setting max width) */
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Set styles for YouTube video(flexbox container,and centering */
+#Youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set styles for an iframe (YouTube video width and height) */
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Set styles for a pseudo-element before the footer(block,centering,margin,font size) */
+footer::before {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Set background color for the body */
+body {
+  background-color: var(--light2);
+}
+
+/* centering text in section for contact me */
+#contact-me {
+  text-align: center;
+}
+
+/* Centering text in paragraph in contact me*/
+#contact-me p {
+  text-align: center;
+}
+
+/* centering heading for contact me */
+#contact-me h2 {
+  text-align: center;
+}
+
+/* table styling for contact me form(padding and removal of borders)*/
+.contact-table td {
+  padding: 5px;
+  border: none;
+}
+
+/* set the style for contact_form section */
+#contact-form {
+  text-align: center;
+  padding: 2% 0;
+}
+
+/* Set styles for contact form (width,centering,border,padding)*/
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* title of table, setting it's css properties */
+#contact-form-h {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+#contact-form p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+/*making lables blocks and giving them margins*/
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styles for width,padding,marging,border,border radius for the form*/
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="textarea"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styles for submit buttonfor width,padding,marging,border,border radius for the form*/
+.contact-form input[type="submit"] {
+  background-color: var(--dark);
+  color: var(--light2);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* style when hovering over submit button*/
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Set grid layout for coding language pictures*/
+#Flex {
+  display: grid;
+  grid-template-areas:
+    "rowOne"
+    "rowTwo";
+}
+
+/* styling the first row of contact form */
+#row1 {
+  display: flex;
+  grid-area: rowOne;
+  justify-content: center;
+}
+
+/* Sstyling the second row of contact form */
+#row2 {
+  display: flex;
+  grid-area: rowTwo;
+  justify-content: center;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  /* index page */
+  #main_text {
+    color: var(--light2);
+    text-align: justify;
+    padding: 2% 10% 2% 10%;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  #main_text_div {
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image img{
+    height: 30%;
+    background-size: cover;
+  }
+
+  /* make it at the bottom of image */
+  .image p{
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    color: var(--light2);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* applying the css to table div */
+  #table_div {
+    background-color: var(--dark2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 2% 10% 2% 10%;
+  }
+
+  /* giving the style to the headeing2 */
+  h2{
+    color: var(--light2);
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text-dark{
+    color: var(--dark);
+  }
+
+  h3{
+    color: var(--light);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* Styling related to the table */
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  th{
+    background-color: var(--dark);
+    color: var(--light2);
+    padding: 10px;
+  }
+
+  td{
+    background-color: var(--dark2);
+    color: var(--light2);
+    padding: 10px;
+  }
+
+  tr{
+    background-color: var(--dark2);
+    color: var(--light2);
+  }
+
+  td > p{
+    color: var(--light2);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  li{
+    padding: 2px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--light);
+  }
+
+  #footer {
+    background-color: var(--dark);
+    color: var(--light2);
+    text-align: center;
+    padding: 10px;
+  }
+
+  audio{
+    width: 100%;
+    background-color: var(--dark2);
+    padding: 10px;
+  }
+  /* contact me page */
+  header h1 {
+    color: var(--light);
+  }
+
+  #contact-me-header {
+    background-color: #000000;
+  }
+
+  #media_table {
+    background-color: #F2F2F2;
+  }
+
+  #contact-me {
+    background-color: #FFFFFF;
+  }
+
+  /* contact me form */
+  #skills {
+    background-color: #F2F2F2;
+  }
+
+  #skills p{
+    color: var(--dark);
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  #projects {
+    background-color: #000000;
+  }
+
+  #projects_{
+    background-color: #F2F2F2;
+  }
+
+  #projects_ h2{
+    color: var(--dark);
+  }
+
+
+  #horizontal-images {
+    background-color: #000000;
+  }
+
+  #horizontal-images h2 {
+    color: var(--light2);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* index page */
+  #main_text {
+    color: var(--light2);
+    text-align: justify;
+    padding: 2% 10% 2% 10%;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  #main_text_div {
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image img{
+    height: 30%;
+    background-size: cover;
+  }
+
+  /* make it at the bottom of image */
+  .image p{
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    color: var(--light2);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* applying the css to table div */
+  #table_div {
+    background-color: var(--dark2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 2% 10% 2% 10%;
+  }
+
+  /* giving the style to the headeing2 */
+  h2{
+    color: var(--light2);
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text-dark{
+    color: var(--dark);
+  }
+
+  h3{
+    color: var(--light);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* Styling related to the table */
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  th{
+    background-color: var(--dark);
+    color: var(--light2);
+    padding: 10px;
+  }
+
+  td{
+    background-color: var(--dark2);
+    color: var(--light2);
+    padding: 10px;
+  }
+
+  tr{
+    background-color: var(--dark2);
+    color: var(--light2);
+  }
+
+  td > p{
+    color: var(--light2);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  li{
+    padding: 2px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--light);
+  }
+
+  #footer {
+    background-color: var(--dark);
+    color: var(--light2);
+    text-align: center;
+    padding: 10px;
+  }
+
+  audio{
+    width: 100%;
+    background-color: var(--dark2);
+    padding: 10px;
+  }
+  /* contact me page */
+  header h1 {
+    color: var(--light);
+  }
+
+  #contact-me-header {
+    background-color: #000000;
+  }
+
+  #media_table {
+    background-color: #F2F2F2;
+  }
+
+  #contact-me {
+    background-color: #FFFFFF;
+  }
+
+  /* contact me form */
+  #skills {
+    background-color: #F2F2F2;
+  }
+
+  #skills p{
+    color: var(--dark);
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  #projects {
+    background-color: #000000;
+  }
+
+  #projects_{
+    background-color: #F2F2F2;
+  }
+
+  #projects_ h2{
+    color: var(--dark);
+  }
+
+
+  #horizontal-images {
+    background-color: #000000;
+  }
+
+  #horizontal-images h2 {
+    color: var(--light2);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  /* index page */
+  #main_text {
+    color: var(--light2);
+    text-align: justify;
+    padding: 2% 10% 2% 10%;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  #main_text_div {
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image img{
+    height: 30%;
+    background-size: cover;
+  }
+
+  /* make it at the bottom of image */
+  .image p{
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    color: var(--light2);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* applying the css to table div */
+  #table_div {
+    background-color: var(--dark2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 2% 10% 2% 10%;
+  }
+
+  /* giving the style to the headeing2 */
+  h2{
+    color: var(--light2);
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text-dark{
+    color: var(--dark);
+  }
+
+  h3{
+    color: var(--light);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* Styling related to the table */
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  th{
+    background-color: var(--dark);
+    color: var(--light2);
+    padding: 10px;
+  }
+
+  td{
+    background-color: var(--dark2);
+    color: var(--light2);
+    padding: 10px;
+  }
+
+  tr{
+    background-color: var(--dark2);
+    color: var(--light2);
+  }
+
+  td > p{
+    color: var(--light2);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  li{
+    padding: 2px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--light);
+  }
+
+  #footer {
+    background-color: var(--dark);
+    color: var(--light2);
+    text-align: center;
+    padding: 10px;
+  }
+
+  audio{
+    width: 100%;
+    background-color: var(--dark2);
+    padding: 10px;
+  }
+  /* contact me page */
+  header h1 {
+    color: var(--light);
+  }
+
+  #contact-me-header {
+    background-color: #000000;
+  }
+
+  #media_table {
+    background-color: #F2F2F2;
+  }
+
+  #contact-me {
+    background-color: #FFFFFF;
+  }
+
+  /* contact me form */
+  #skills {
+    background-color: #F2F2F2;
+  }
+
+  #skills p{
+    color: var(--dark);
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  #projects {
+    background-color: #000000;
+  }
+
+  #projects_{
+    background-color: #F2F2F2;
+  }
+
+  #projects_ h2{
+    color: var(--dark);
+  }
+
+
+  #horizontal-images {
+    background-color: #000000;
+  }
+
+  #horizontal-images h2 {
+    color: var(--light2);
+  }
+}

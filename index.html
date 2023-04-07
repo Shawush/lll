@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <title>Omar Shawush</title>
+  <link rel="icon" type="image/png" href="images/Favicon.png"><!--FavIcon libya-->
+</head>
+
+<body class="main-pages">
+  <header>
+    <h1>Omar Shawush's Portfolio</h1><!--Title of page-->
+  </header>
+  <nav><!-- Navigator that lets you move around from page to page -->
+
+    <a href="Contact-Me.html"><b>Contact Me</b></a>
+    <a href="Skills-And-Projects.html"><b>Skills And Projects</b></a>
+
+    <!-- add three buttons to the changes the collor pallet of the page -->
+    <button class="color-btn" id="pallate_1" onclick="changeColor()">pallate 1</button>
+    <button class="color-btn" id="pallate_2" onclick="changeColor2()">pallate 2</button>
+    <button class="color-btn" id="pallate_3" onclick="changeColor3()">pallate 3</button>
+
+  </nav>
+  <main id="index_main">
+    <div id="main_text_div">
+      <p id="main_text"><!--Paragraph about me -->
+        Hello my name is Omar Shawush I am a first year Computer Science Student.
+        I am a Libyan Canadian student Currently in my second semester at Dalhousie University.
+        My interest in computer science stems from my love of technology and innovation.
+        I enjoy learning about CyberSecurity, AI, Game Design, and Data Science.
+        Becoming a Software engineer is a position I've always aspired to become and excel in.
+      </p>
+      <!--Code for image of me -->
+      <div class="image">
+        <p class="image-text">Omar Shawush</p>
+        <img src="images/Omar-Shawush.JPG" alt="Picture of me" width="300" height="300">
+      </div>
+
+    </div>
+    <div id="table_div">
+      <h2>About me</h2><!--Start of about me section-->
+
+      <h3>My Hobbies</h3><!--My hobby section -->
+
+      <!-- Table for interests -->
+      <table>
+        <!-- head row -->
+        <tr>
+          <th>Video Games</th>
+          <th>Sports</th>
+          <th>Traveling</th>
+        </tr>
+        <!-- row 1 -->
+        <tr>
+          <td>
+            <!-- Video games paragraph -->
+            <p>Video games are one of my biggest hobbies and were my gate into computer science.
+              I've always been intrigued by the framework and background of games. Knowing all the
+              background of mechanics functions has always been a question I have and I am now learning Computer
+              Science and game development as a result of my love of games.
+            </p>
+          </td>
+
+          <td>
+            <!-- Sports paragraph -->
+            <p>Sports have been a hobby of mine since a kid. I've always had a love for sports and activity.
+              It serves as a stress reliever and helps me take a break in between work so I do not overload.
+              It helps clear the mind and regain focus when you need to stop and take a breather in between
+              work.
+            </p>
+          </td>
+
+          <td>
+            <!-- Travel paragraph -->
+            <p>When I'm not learning or working I love to travel. Traveling lets you see the world in different
+              ways. Seeing how different societies function and how they incorporate technology helps you see
+              how technologies simplify. Technology is a means of simplifying our lives and when I visit countries
+              that are not as techlogically advanced. You get a love for technology and its way of simplifying our
+              lives.
+            </p>
+          </td>
+        </tr>
+
+        <!-- row 2 -->
+        <tr>
+          <td>
+            <!-- Video games list -->
+            <ul>
+              <li>Legend of zelda</li>
+              <li>Fifa</li>
+              <li>Fortnite</li>
+            </ul>
+          </td>
+
+          <td>
+            <!-- Sports list -->
+            <ul>
+              <li>Soccer</li>
+              <li>Basketball</li>
+              <li>Tennis</li>
+            </ul>
+          </td>
+
+          <td>
+            <!-- Travel list -->
+            <ul>
+              <li>Tripoli</li>
+              <li>Dubai</li>
+              <li>_</li>
+            </ul>
+          </td>
+        </tr>
+
+
+      </table>
+
+
+    </div>
+    <section id="footer"><!--Footer section-->
+      <h3>Topics that I've Been Exploring</h3><!--Youtube video of my interesting topic-->
+      <div id="Youtube">
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/C164kYMGV1A">
+        </iframe>
+      </div>
+    </section>
+
+    <audio controls><!--Audio section of libyan anthem with controls allowed-->
+      <source src="audio-file/Libyan-anthem.mp3" type="audio/mpeg">
+    </audio>
+
+  </main>
+
+</body>
+
+</html>
